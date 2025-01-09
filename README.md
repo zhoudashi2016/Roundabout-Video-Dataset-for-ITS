@@ -16,7 +16,7 @@
 ### Licensing Information
   This dataset is provided under the MIT license. By using this dataset, you agree to the following terms:
 
-* Usage: You are permitted to use this dataset for [academic/research/commercial] purposes, including but not limited to [list specific use cases, e.g., training machine learning models, developing ADAS systems, etc.].
+* Usage: You are permitted to use this dataset for academic purposes, including but not limited to training machine learning models, developing ADAS systems, etc.
 
 * Attribution: If you use this dataset in any published work (e.g., papers, presentations), you must provide proper attribution as follows:
 "This work uses the "Roundabout-Video-Dataset-for-ITS", which was provided by Ruichun Zhou(周瑞淳). Available at https://github.com/zhoudashi2016/Roundabout-Video-Dataset-for-ITS"
