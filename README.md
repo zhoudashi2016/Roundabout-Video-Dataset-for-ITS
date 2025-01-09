@@ -1,2 +1,12 @@
-# Roundabout-Video-Dataset-for-ITS
-## Video Links: https://pan.baidu.com/s/15wdjXxt5BXVRke6lBoidLQ  Access Code: 12qw 
+![流程图vvvvv](https://github.com/user-attachments/assets/f2de8a17-fd3a-4d3c-b0db-eb515f823ae0)# Roundabout-Video-Dataset-for-ITS
+## Video Links: https://pan.baidu.com/s/15wdjXxt5BXVRke6lBoidLQ Extraction  Code: 12qw 
+### Project Overview
+  This dataset is designed to advance the development of advanced driver-assistance systems (ADAS) and autonomous vehicles by enabling precise prediction of vehicle turning intentions at roundabouts. Vehicle information, including timestamps, pixel coordinates, and heading angles, is extracted from video data using YOLOv8 for object detection and DeepSORT for multi-target tracking. These data points enhance situational awareness, reducing collision risks and facilitating smoother traffic flow by providing a detailed understanding of dynamic interactions in roundabout environments.
+  
+  Captured in Wuhan, China, this compilation features videos recorded between 8 a.m. and 6 p.m. in December 2024. It comprises 235 video clips with a total duration of 226.9 minutes, captured from seven viewpoints across two roundabouts. The dataset covers various traffic conditions during peak and off-peak hours, recorded under clear weather conditions in daylight to ensure optimal visibility. High-resolution videos from multiple angles capture diverse traffic scenarios, making it a comprehensive resource for detailed analysis.
+  
+  The dataset's trajectory data can be used to optimize traffic flow by predicting vehicle paths, speeds, and interactions, allowing for better traffic signal timings and route planning. In Advanced Driving Assistance Systems (ADAS), it supports real-time vehicle tracking, alerting drivers to potential collisions and enhancing safety. Additionally, the dataset aids in detecting abnormal driving behaviors, such as sudden lane changes or harsh braking, enabling timely alerts for both drivers and traffic systems. 
+
+### Data Description
+  The dataset provides detailed information on 4,343 labeled vehicles, including precise timestamps marking their appearance in the video frames, pixel coordinates indicating their position within the image, and real-world coordinates derived through monocular ranging. Additionally, heading angles, calculated from adjacent frame coordinates, are included to indicate the vehicle's movement direction. In total, there are 724,615 trajectory records documenting the vehicles' movement over time, with updates for each frame to capture dynamic changes in their positions and movements.
+
