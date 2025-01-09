@@ -9,10 +9,15 @@
 
 ### Data Description
   The dataset provides detailed information on 4,343 labeled vehicles, including precise timestamps marking their appearance in the video frames, pixel coordinates indicating their position within the image, and real-world coordinates derived through monocular ranging. Additionally, heading angles, calculated from adjacent frame coordinates, are included to indicate the vehicle's movement direction. In total, there are 724,615 trajectory records documenting the vehicles' movement over time, with updates for each frame to capture dynamic changes in their positions and movements.
-  
-  The dataset utilizes the YOLOv8 algorithm integrated with the DeepSORT tracker for object detection and tracking. YOLOv8 quickly identifies traffic entities such as vehicles, pedestrians, and other objects within video frames, while DeepSORT ensures stable multi-target tracking by using ReID features and motion states to maintain the identity of each detected target over time. To convert pixel coordinates into real-world positions, monocular ranging is applied, leveraging key camera parameters like focal length, principal point, and frame size, and constructing an intrinsic matrix via OpenCV. By considering the camera's height, angle, and triangulation geometry, the real-world coordinates of vehicles are accurately calculated. The bottom-center of each detected vehicle's bounding box serves as the target pixel coordinate, with the camera position as the origin, allowing for the precise determination of vehicle positions in real-world coordinates. This process enables the creation of a comprehensive vehicle trajectory dataset for roundabout scenarios.
-  
+
 ![流程图vvvvv](https://github.com/user-attachments/assets/f2de8a17-fd3a-4d3c-b0db-eb515f823ae0)
+
+  The dataset utilizes the YOLOv8 algorithm integrated with the DeepSORT tracker for object detection and tracking. YOLOv8 quickly identifies traffic entities such as vehicles, pedestrians, and other objects within video frames, while DeepSORT ensures stable multi-target tracking by using ReID features and motion states to maintain the identity of each detected target over time. To convert pixel coordinates into real-world positions, monocular ranging is applied, leveraging key camera parameters like focal length, principal point, and frame size, and constructing an intrinsic matrix via OpenCV. By considering the camera's height, angle, and triangulation geometry, the real-world coordinates of vehicles are accurately calculated. The bottom-center of each detected vehicle's bounding box serves as the target pixel coordinate, with the camera position as the origin, allowing for the precise determination of vehicle positions in real-world coordinates. This process enables the creation of a comprehensive vehicle trajectory dataset for roundabout scenarios.
+
+![csv](https://github.com/user-attachments/assets/3b27c291-ac1d-450e-b532-e7a64c9f2e23)
+
+  This is a screenshot of the CSV file of the dataset. The first column contains the vehicle ID, where "test_xxx_car_yyy" represents the vehicle with ID "yyy" in the video "test_xxx.mp4". The second column contains the timestamp of the data record. The third and fourth columns are the pixel coordinates of the vehicle. The fifth and sixth columns are the actual coordinates of the vehicle. The seventh column contains the heading angle.
+
 ### Licensing Information
   This dataset is provided under the MIT license. By using this dataset, you agree to the following terms:
 
